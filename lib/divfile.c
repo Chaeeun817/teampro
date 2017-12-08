@@ -5,6 +5,8 @@ int divfile(FILE *fd)
 {
    FILE *talkf;
 
+   int num;
+
    char year[3][15] = {"2015년", "2016년", "2017년"};
    char str[] = ".txt";
    char buf[1024];
@@ -29,4 +31,21 @@ int divfile(FILE *fd)
            }fclose(talkf);
         }
    }fclose(fd);
+
+   printf("(1) 연도별 애정도 보기\n(2) 종합 애정도 보기\n");
+   printf("번호를 입력해 주세요 : ");
+
+   while(1){
+        scanf("%d", &num);
+
+        if(num == 1){//연도별 파일 목록 보여주고 선택안내
+           yearlist("ls -1 /home/seo/try/lib/ | grep 년.txt | grep -v ^d");
+           selyear();
+           break;
+        }
+        //else if -- 종합애정도 함수 호출
+        else{
+           prinft("잘못 입력하셨습니다. 다시 입력해 주세요 : ");
+        }
+   }
 }

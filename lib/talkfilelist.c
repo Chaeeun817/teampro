@@ -1,12 +1,13 @@
 #include <unistd.h>
 
-int showlist(char *command)
+int talklist(char *command)
 {
    execl("/bin/sh", "sh", "-c", command, (char *) 0);
+   seltalk();
 }
 
 int main()
 {
-   showlist("ls -1 *.txt");
+   talklist("ls -1 /home/seo/teampro/lib/ | grep 대화.txt | grep -v ^d");
 }
 
