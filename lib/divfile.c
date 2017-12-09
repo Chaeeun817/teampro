@@ -39,11 +39,11 @@ int divfile(FILE *fd)
         scanf("%d", &num);
 
         if(num == 1){//연도별 파일 목록 보여주고 선택안내
-           yearlist("ls -1 /home/seo/try/lib/ | grep 년.txt | grep -v ^d");
+           talklist("ls -1 /home/seo/try/lib/ | grep 년.txt | grep -v ^d");
            selyear();
            break;
         }
-        //else if -- 종합애정도 함수 호출
+        //else if(num == 2){ -- 종합애정도 함수 호출
         else{
            prinft("잘못 입력하셨습니다. 다시 입력해 주세요 : ");
         }
