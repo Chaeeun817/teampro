@@ -45,7 +45,7 @@ int divfile(FILE *fd)
         }
         //else if(num == 2){ -- 종합애정도 함수 호출
         else{
-           prinft("잘못 입력하셨습니다. 다시 입력해 주세요 : ");
+           printf("잘못 입력하셨습니다. 다시 입력해 주세요 : ");
         }
    }
 }
