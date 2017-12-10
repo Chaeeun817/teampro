@@ -15,7 +15,8 @@ void wordcnt(char *str)
 
 	if(strcmp(str, "2015년") == 0)
 	{
-		printf("분석중\n");
+		printf("...분석중...\n");
+		printf("< 두 분의 애정도 분석 결과입니다. >\n");
 		like1 = mysystem("grep -c 사랑해 2015년.txt");
         	like2 = mysystem("grep -c 좋아해 2015년.txt");
         	like3 = mysystem("grep -c 보고싶어 2015년.txt");
@@ -28,16 +29,17 @@ void wordcnt(char *str)
 
 		if(countl > counth)
 		{
-			printf("썸\n");
+			printf("++ 우리는 두근두근 설레는 썸! ++\n");
 		}
 		else
 		{
-			printf("친구\n");
+			printf("++ 우리는 아직 그냥 친구ㅠㅠ ++\n");
 		}
 	}
 	else if(strcmp(str, "2016년") == 0)
         {
-		printf("분석중\n");
+		printf("...분석중...\n");
+		printf("< 두 분의 애정도 분석 결과입니다. >\n");
                 like1 = mysystem("grep -c 사랑해 2016년.txt");
                 like2 = mysystem("grep -c 좋아해 2016년.txt");
                 like3 = mysystem("grep -c 보고싶어 2016년.txt");
@@ -50,15 +52,16 @@ void wordcnt(char *str)
 
                 if(countl > counth)
                 {
-                        printf("썸\n");
+                        printf("++ 우리는 두근두근 설레는 썸! ++\n");
 		}
 		else
-			printf("친구\n");
+			printf("++ 우리는 아직 그냥 친구ㅠㅠ ++\n");
 
 	}
 	else if(strcmp(str, "2017년") == 0)
         {
-                printf("분석중\n");
+                printf("...분석중...\n");
+		printf("< 두 분의 애정도 분석 결과입니다. >\n");
                 like1 = mysystem("grep -c 사랑해 2017년.txt");
                 like2 = mysystem("grep -c 좋아해 2017년.txt");
                 like3 = mysystem("grep -c 보고싶어 2017년.txt");
@@ -71,10 +74,10 @@ void wordcnt(char *str)
 
                 if(countl > counth)
                 {
-                        printf("썸\n");
+                        printf("++ 우리는 두근두근 설레는 썸! ++\n");
                 }
                 else{
-                        printf("친구\n");
+                        printf("++ 우리는 아직 그냥 친구ㅠㅠ ++\n");
 		}
 	}
 }

@@ -35,6 +35,7 @@ int divfile(FILE *fd)
         }
    }fclose(fd);
 
+   printf("< 어떤 분석을 원하세요? >\n");
    printf("(1) 연도별 애정도 보기\n(2) 종합 애정도 보기\n");
    printf("번호를 입력해 주세요 : ");
 
@@ -42,6 +43,8 @@ int divfile(FILE *fd)
         scanf("%d", &num);
 
         if(num == 1){//연도별 파일 목록 보여주고 선택안내
+	   printf("============================================================\n");
+	   printf("< 어떤 해의 애정도를 알고싶으세요? >\n");
            mysystem("ls -1 /home/seo/teampro/ | grep 년.txt | grep -v ^d");
            selyear();
            break;

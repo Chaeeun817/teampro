@@ -22,6 +22,7 @@ void selyear()
            scanf("%s", str);
         }
         else{
+	   printf("============================================================\n");
            break;
         }
    }fclose(fd);

@@ -12,7 +12,9 @@ int total()
         int countl=0;
         int counth=0;
 
-	printf("분석중\n");
+	printf("============================================================\n");
+	printf("...분석중...\n");
+	printf("< 두 분의 애정도 분석 결과입니다. >\n");
 	like1 = mysystem("grep -c 사랑해 채은님과의대화.txt");
 	like2 = mysystem("grep -c 좋아해 채은님과의대화.txt");
 	like3 = mysystem("grep -c 보고싶어 채은님과의대화.txt");
@@ -25,10 +27,10 @@ int total()
 
 	if(countl > counth)
 	{
-		printf("썸\n");
+		printf("++ 우리는 두근두근 설레는 썸! ++\n");
 	}
 	else
 	{
-		printf("친구\n");
+		printf("++ 우리는 아직 그냥 친구ㅠㅠ ++\n");
 	}
 }
