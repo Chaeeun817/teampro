@@ -4,7 +4,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-int talklist(char *command)
+int mysystem(char *command)
 {
    pid_t pid = fork();
    int child_status;
@@ -20,11 +20,4 @@ int talklist(char *command)
 	   break;
    }
 }
-/*
-int main() //app의 .c파일의 main
-{
-   talklist("ls -1 /home/seo/teampro/lib/ | grep 대화.txt | grep -v ^d");
-   seltalk();
-}
 
-*/

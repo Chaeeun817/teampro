@@ -39,7 +39,7 @@ int divfile(FILE *fd)
         scanf("%d", &num);
 
         if(num == 1){//연도별 파일 목록 보여주고 선택안내
-           talklist("ls -1 /home/seo/try/lib/ | grep 년.txt | grep -v ^d");
+           mysystem("ls -1 /home/seo/try/lib/ | grep 년.txt | grep -v ^d");
            selyear();
            break;
         }
