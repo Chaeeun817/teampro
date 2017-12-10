@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void selyear()
 {
@@ -25,16 +26,16 @@ void selyear()
    }
 
 //그 해의 애정도 보여주는 함수 호출부 작성
-   if(str == 2015년)
+   if(strcmp(str, "2015년.txt") == 0)
    {
-     wordcnt(2015년);
+     wordcnt("2015년");
    }
-   else if(str == 2016년)
+   else if(strcmp(str, "2016년.txt") == 0)
    {
-     wordcnt(2016년);
+     wordcnt("2016년");
    }
-   else if(str == 2017년)
+   else if(strcmp(str, "2017년.txt") == 0)
    {
-     wordcnt(2017년);
+     wordcnt("2017년");
    }
 }

@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <string.h>
 
 int my_system(char *command)
 {
@@ -32,7 +33,7 @@ void wordcnt(char *str)
 	int countl=0;
 	int counth=0;
 
-	if(str == 2015년)
+	if(strcmp(str, "2015년") == 0)
 	{
 		printf("분석중\n");
 		like1 = my_system("grep -c 사랑해 2015년.txt");
@@ -54,7 +55,7 @@ void wordcnt(char *str)
 			printf("친구\n");
 		}
 	}
-	else if(str == 2016년)
+	else if(strcmp(str, "2016년") == 0)
         {
 		printf("분석중\n");
                 like1 = my_system("grep -c 사랑해 2016년.txt");
@@ -75,7 +76,7 @@ void wordcnt(char *str)
 			printf("친구\n");
 
 	}
-	else if(str == 2017년)
+	else if(strcmp(str, "2017년") == 0)
         {
                 printf("분석중\n");
                 like1 = my_system("grep -c 사랑해 2017년.txt");
