@@ -45,7 +45,7 @@ int divfile(FILE *fd)
         if(num == 1){//연도별 파일 목록 보여주고 선택안내
 	   printf("============================================================\n");
 	   printf("< 어떤 해의 애정도를 알고싶으세요? >\n");
-           mysystem("ls -1 /home/seo/teampro/ | grep 년.txt | grep -v ^d");
+           mysystem("ls -1 . | grep 년.txt | grep -v ^d");
            selyear();
            break;
         }
