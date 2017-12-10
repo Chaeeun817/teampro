@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include "mysys.h"
+#include "select.h"
+#include "sentianal.h"
 
 int divfile(FILE *fd)
 {
@@ -45,6 +48,8 @@ int divfile(FILE *fd)
         }
         else if(num == 2){//종합애정도
 	   total();
+	   break;
+	}
         else{
            printf("잘못 입력하셨습니다. 다시 입력해 주세요 : ");
         }

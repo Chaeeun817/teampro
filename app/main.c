@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "tfl.h"
+#include "mysys.h"
 #include "select.h"
 #include "divfile.h"
 #include "sentianal.h"

@@ -4,6 +4,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <string.h>
+#include "mysys.h"
 
 void wordcnt(char *str)
 {
@@ -72,7 +73,7 @@ void wordcnt(char *str)
                 {
                         printf("썸\n");
                 }
-                else
+                else{
                         printf("친구\n");
 		}
 	}

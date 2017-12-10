@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "sentianal.h"
 
 void selyear()
 {
@@ -23,7 +24,7 @@ void selyear()
         else{
            break;
         }
-   }
+   }fclose(fd);
 
 //그 해의 애정도 보여주는 함수 호출부 작성
    if(strcmp(str, "2015년.txt") == 0)

@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include "mysys.h"
 
 int total()
 {
@@ -16,9 +17,9 @@ int total()
 	like2 = mysystem("grep -c 좋아해 채은님과의대화.txt");
 	like3 = mysystem("grep -c 보고싶어 채은님과의대화.txt");
 
-	hate1 = my_system("grep -c 시발 채은님과의대화.txt");
-	hate2 = my_system("grep -c 존나 채은님과의대화.txt");
-	hate2 = my_system("grep -c 빡쳐 채은님과의대화.txt");
+	hate1 = mysystem("grep -c 시발 채은님과의대화.txt");
+	hate2 = mysystem("grep -c 존나 채은님과의대화.txt");
+	hate2 = mysystem("grep -c 빡쳐 채은님과의대화.txt");
 
 	counth = hate1+hate2+hate3;
 
