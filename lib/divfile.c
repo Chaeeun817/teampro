@@ -43,7 +43,8 @@ int divfile(FILE *fd)
            selyear();
            break;
         }
-        //else if(num == 2){ -- 종합애정도 함수 호출
+        else if(num == 2){//종합애정도
+	   total();
         else{
            printf("잘못 입력하셨습니다. 다시 입력해 주세요 : ");
         }
