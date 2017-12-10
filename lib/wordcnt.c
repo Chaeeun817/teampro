@@ -25,7 +25,7 @@ int my_system(char *command)
 	return mystatus;
 }
 
-int main(void)
+void wordcnt(char *str)
 {
 	int like1,like2,like3;
 	int hate1,hate2,hate3;
@@ -34,6 +34,7 @@ int main(void)
 
 	if(str == 2015년)
 	{
+		printf("분석중\n");
 		like1 = my_system("grep -c 사랑해 2015년.txt");
         	like2 = my_system("grep -c 좋아해 2015년.txt");
         	like3 = my_system("grep -c 보고싶어 2015년.txt");
@@ -55,6 +56,7 @@ int main(void)
 	}
 	else if(str == 2016년)
         {
+		printf("분석중\n");
                 like1 = my_system("grep -c 사랑해 2016년.txt");
                 like2 = my_system("grep -c 좋아해 2016년.txt");
                 like3 = my_system("grep -c 보고싶어 2016년.txt");
@@ -73,9 +75,26 @@ int main(void)
 			printf("친구\n");
 
 	}
-	else
-	{
-		printf("선택한 파일이 존재하지 않습니다.\n");
+	else if(str == 2017년)
+        {
+                printf("분석중\n");
+                like1 = my_system("grep -c 사랑해 2017년.txt");
+                like2 = my_system("grep -c 좋아해 2017년.txt");
+                like3 = my_system("grep -c 보고싶어 2017년.txt");
+
+                hate1 = my_system("grep -c 시발 2017년.txt");
+                hate2 = my_system("grep -c 존나 2017년.txt");
+                hate2 = my_system("grep -c 빡쳐 2017년.txt");
+
+                counth = hate1+hate2+hate3;
+
+                if(countl > counth)
+                {
+                        printf("썸\n");
+                }
+                else
+                        printf("친구\n");
+		}
 	}
 	return 0;
 }
